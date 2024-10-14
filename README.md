@@ -1,5 +1,5 @@
 I made these projects in my first two years of learning object oriented programming in Java. The first project is simply a graphing calculator. 
-As it stands it just graphs linear and quadratic equations, I found it hard the time to extract a string of an equation and read which numbers were coefficients
+As it stands it just graphs linear and quadratic equations, I found it hard at the time to extract a string of an equation and read which numbers were coefficients
 and which were powers and of course
 the variables. Found it easier though to read the constants a, b, c from the quadratic and from there make two arrays of x and y resulting from a, b and c.
 I hope to add on to this 
