@@ -154,7 +154,7 @@ public class Planets extends JPanel implements Runnable {
                 center.y+venOriginY-VENUS_RADIUS/2,
                 VENUS_RADIUS, VENUS_RADIUS);
 
-        g2.setPaint(Color.white);
+        g2.setPaint(Color.white);  
         g2.drawString(planets[2], center.x+earthOriginX-EARTH_RADIUS/2,
                 center.y+earthOriginY-EARTH_RADIUS/2 );
         g2.setPaint(Color.blue);
@@ -260,6 +260,9 @@ public class Planets extends JPanel implements Runnable {
             repaint();
         }
     }
+
+    //This was a fun project and I wrote it all by myself
+
 
 
     public static void main(String args[]){
