@@ -1,5 +1,9 @@
 start = input("Enter first approximation values: ")
 print(start)
 start_values = start.split()
+inputs = []
 for value in start_values:
-    value = float(value)
+    inputs.append(float(value))
+
+print(inputs[])
+    
