@@ -276,3 +276,4 @@ public class Planets extends JPanel implements Runnable {
         frame.setVisible(true);
     }
 }
+
