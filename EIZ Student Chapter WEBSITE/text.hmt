@@ -1,0 +1,74 @@
+        <!-- Sections -->
+        <section id="about-us" class="fade-in" style="display: none; margin-top: 3rem;">
+          <h3> Who We Are</h3>
+          <p>
+           EIZ Student Chapter – UNZA
+           The EIZ Student Chapter at the University of Zambia is a professional 
+           platform that connects engineering students with the Engineering Institution of Zambia (EIZ). 
+           We provide a bridge between classroom learning and the engineering profession by promoting innovation,
+           technical skills development, ethical practice, and leadership among students.
+          </p>
+           <h3>Meet Our 2026 Executive </h3>
+            <div class="team-members-container" style="display: flex; gap: 2rem; margin-top: 1rem;">
+            <div class="team-member" style="text-align: center;">
+              <img src="images/team/Hope.jpg" alt="Hope Rumbzai Shabolyo" style="width:150px; border-radius: 50%;" />
+              <h4>Hope Rumbzai Shabolyo</h4>
+              <h4>Student Chapter President</h4>
+              <p>5th Year Mechanical Engineering Student</p>
+              <p><i>University of Zambia, Lusaka, Zambia</i></p>
+            </div>
+
+            <div class="team-member" style="text-align: center;">
+              <img src="images/team/Tabo.jpg" alt="Tabo Mayapi" style="width:150px; border-radius: 50%;" />
+              <h4>Tabo Mayapi</h4>
+              <h4>Student Chapter Vice President</h4>
+              <p>5th Year Civil and Environmental Engineering Student</p>
+              <p><i>University of Zambia, Lusaka, Zambia</i></p>
+            </div>
+            
+            <div class="team-member" style="text-align: center;">
+              <img src="images/team/Aaron1.png" alt="Aaron Munyanya" style="width:150px; border-radius: 50%;" />
+              <h4>Aaron Munyanya</h4>
+              <h4>Secretary General</h4>
+              <p>5th Year Mechanical Engineering Student</p>
+              <p><i>University of Zambia, Lusaka, Zambia</i></p>
+            </div>
+
+           <div class="team-members-container" style="display: flex; gap: 2rem; margin-top: 1rem;">
+            <div class="team-member" style="text-align: center;">
+              <img src="images/team/tinashe.jpg" alt="TINASHE KAUNDA L " style="width:150px; border-radius: 50%;" />
+              <h4>Tinashe Kaunda</h4>
+              <h4>Financial Secretary</h4>
+              <p>5th Year Civil And Environmental Engineering Student</p>
+              <p><i>University of Zambia, Lusaka, Zambia</i></p>
+            </div>
+
+            <div class="team-member" style="text-align: center;">
+              <img src="images/team/Jonas.jpg" alt="Jonas Kasongo" style="width:150px; border-radius: 50%;" />
+              <h4>Jonas Kasongo</h4>
+              <h4>Projects And Publicity Secretary</h4>
+              <p>5th Year Electrical and Electronics Engineering Student</p>
+              <p><i>University of Zambia, Lusaka, Zambia</i></p>
+            </div>
+            
+            <div class="team-member" style="text-align: center;">
+              <img src="images/team/ucs.jpg" alt="Aaron Munyanya" style="width:150px; border-radius: 50%;" />
+              <h4>Mulamfu Suloka Scot</h4>
+              <h4>School of Mines Student Chapter President</H4>
+              <p>4th Year Geology Student</p>
+              <p><i>University of Zambia, Lusaka, Zambia</i></p>
+            </div>
+
+
+            <div class="team-member" style="text-align: center;">
+              <img src="images/team/peter.jpg" alt="Peter K Lubasi" style="width:150px; border-radius: 50%;" />
+              <h4>Peter K Lubasi</h4>
+              <h4>School of Natural Science Computer Science <br>
+                -Student Chapter President</h4>
+              <p>4th Year Computer Science Student</p>
+              <p><i>University of Zambia, Lusaka, Zambia</i></p>
+            </div>
+            
+
+          </div>
+        </section>
