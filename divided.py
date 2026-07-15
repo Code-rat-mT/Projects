@@ -1,9 +1,9 @@
 import numpy as np
 from numpy import *
 
+//divided differences method of finding derivatives
+
 def coeficients(x,y) :
-    ''' x: absisas x_i 
-        y : ordenadas f(x_i)'''
     n = len(x)
     F = zeros((n,n), dtype=float)
     b = zeros(n) 
@@ -23,11 +23,6 @@ def coeficients(x,y) :
     return np.array(b) 
 
 def Eval(a, x, r):
-
-    '''  a : retorno de la funcion coeficiente() 
-         x : abcisas x_i
-         r : abcisa a interpolar
-    '''
 
     x.astype(float)
     n = len( a ) - 1
