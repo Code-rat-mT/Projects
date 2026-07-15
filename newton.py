@@ -4,12 +4,12 @@ from sympy import *
 from sympy.solvers.solveset import solveset, solveset_real
 
 import matplotlib.pyplot as plt
-#from numpy.doc.constants import lines
 
-def distanceFromRoot(x, values):  ## Return the lowest distance between the supplied roots
+
+def distanceFromRoot(x, values):  
     currentDistance = abs(x-values[0])
 
-    if len(values) > 1:  ## Only run if there is more than one root
+    if len(values) > 1: 
 
         for value in values:
             newDist = abs(x-value)
@@ -17,15 +17,15 @@ def distanceFromRoot(x, values):  ## Return the lowest distance between the supp
                 currentDistance = newDist
 
     return currentDistance
-#Here's something cooler. A graphical simulation of Newton's method. Pretty Amatuer though
+
 
 def generateTangents(x0, real_roots, accuracy):
     if distanceFromRoot(x0, real_roots) > accuracy: ## Continue if the value we have calculated is still too far from a real root
-        tangent = simplify(dy.subs(x, x0)*(x-x0)+(y.subs(x,x0))) ## Find equation of tangent at our x0
-        tangent_intercept = solve(tangent, x)[0]                 ## Find tangent's x intercept
+        tangent = simplify(dy.subs(x, x0)*(x-x0)+(y.subs(x,x0)))
+        tangent_intercept = solve(tangent, x)[0]                 
 
-        lam_tan = lambdify(x, tangent, modules=['numpy'])        ## Function to generate y values of the tangent line
-        tan_y_vals = lam_tan(x_values)                           ## Y values of the tangent line to plot
+        lam_tan = lambdify(x, tangent, modules=['numpy'])       
+        tan_y_vals = lam_tan(x_values)                          
 
         text.set_text("Current x-estimate:  " + str(N(tangent_intercept))) ## Display estimate
 
@@ -67,13 +67,13 @@ if __name__ == '__main__':
     lam_dy = lambdify(x, dy, modules=['numpy']) ## Differential of our eq
 
     ## Calculate starting values
-    x_values = linspace(x_min, x_max, res)      ## Array of x values between xmin and max seperated by res
+    x_values = linspace(x_min, x_max, res)     
     y_values = lam_y(x_values)                  ## Calculated y values
 
-    ## Graph Setup
-    plt.axis([x_min, x_max, y_min, y_max])      ## Setup graph axis
-    plt.grid()                                  ## Enable the graph grid
-    plt.ion()                                   ## Make graph interactive to add future lines
+    ## Graph 
+    plt.axis([x_min, x_max, y_min, y_max])      
+    plt.grid()                                  
+    plt.ion()                                   
 
     ## Plot main Function
     y0_values = linspace(0,0, res)
@@ -83,9 +83,9 @@ if __name__ == '__main__':
     plt.draw()
     plt.pause(0.1)
 
-    ## Start generating tangent lines! weo
+    
     generateTangents(x0, roots_array, 0.0000001)
 
-    ## Keep the graph from disappearing
+   
     plt.ioff()
     plt.show()
