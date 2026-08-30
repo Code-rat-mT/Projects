@@ -8,7 +8,7 @@ def checksequence(number):
     s = str(number)
     L = len(s)
 
-    # Try all possible repetition counts (2 to L)
+    #I'll try all possible repetition counts (2 to L)
     for k in range(2, L + 1):
         if L % k != 0:
             continue  # must divide evenly
@@ -16,7 +16,7 @@ def checksequence(number):
         chunk_len = L // k
         chunk = s[:chunk_len]
 
-        # Prevent sequences like "0101"
+        # checking to prevent weird sequences
         if chunk[0] == '0':
             continue
 
@@ -27,7 +27,7 @@ def checksequence(number):
     return False
 
 
-# Parse input
+
 ranges = content.split(",")
 
 invalids = []
